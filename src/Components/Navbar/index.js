@@ -14,7 +14,8 @@ const Navbar = () => {
       document.body.classList.remove('no-scroll'); // Remove class when menu is closed
     }
   }
-  const handleLinkClick = (path) =>{
+  const handleLinkClick = (event, path) =>{
+    event.preventDefault();
     setshowMobMenu(false);
     document.body.classList.remove('no-scroll');
     setprogress(30); // Start loading
@@ -34,10 +35,10 @@ const Navbar = () => {
         <a href="/Resume.pdf" target='_blank' download className="resume-btn">My Resume</a>
           <ul>
             <li>
-          <Link to="/" onClick={() => handleLinkClick('/')}>Home</Link>
-          <Link to="/about" onClick={() => handleLinkClick('/about')}>About</Link>
-          <Link to="/projects" onClick={() => handleLinkClick('/projects')}>Projects</Link>
-          <Link to="/contact" onClick={() => handleLinkClick('/contact')}>Contact</Link>
+          <Link to="/" onClick={(event) => handleLinkClick(event,'/')}>Home</Link>
+          <Link to="/about" onClick={(event) => handleLinkClick(event,'/about')}>About</Link>
+          <Link to="/projects" onClick={(event) => handleLinkClick(event,'/projects')}>Projects</Link>
+          <Link to="/contact" onClick={(event) => handleLinkClick(event,'/contact')}>Contact</Link>
             </li>
           </ul>
           {/* Css of hamburger section is written inside Common folder in commonclasses.css */}
@@ -49,10 +50,10 @@ const Navbar = () => {
     </div>
       <div className={`mobileNav ${showMobMenu ? 'is-active' : ''}`}>
         <ul className="mobileNavList">
-          <li><Link to="/" onClick={() => handleLinkClick('/')}>Home</Link></li>
-          <li><Link to="/about" onClick={() => handleLinkClick('/about')}>About</Link></li>
-          <li><Link to="/projects" onClick={() => handleLinkClick('/projects')}>Projects</Link></li>
-          <li><Link to="/contact" onClick={() => handleLinkClick('/contact')}>Contact</Link></li>
+          <li><Link to="/" onClick={(event) => handleLinkClick(event, '/')}>Home</Link></li>
+          <li><Link to="/about" onClick={(event) => handleLinkClick(event, '/about')}>About</Link></li>
+          <li><Link to="/projects" onClick={(event) => handleLinkClick(event, '/projects')}>Projects</Link></li>
+          <li><Link to="/contact" onClick={(event) => handleLinkClick(event, '/contact')}>Contact</Link></li>
         </ul>
       </div>
     </>

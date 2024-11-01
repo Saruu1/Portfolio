@@ -4,7 +4,7 @@ const HomePage = (props) => {
   return (
     <>
     <div className="container">
-        <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="non"  />
+        <img src="/picture.png" alt="non"  />
         <div className="description"><p>Hello, I am</p></div>
           <div className="main">
           Sarvar Hussain

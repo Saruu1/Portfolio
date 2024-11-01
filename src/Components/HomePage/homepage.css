@@ -68,7 +68,7 @@ img{
     .container{
         flex-direction: column;
         width: 70vw;
-        margin: 100px auto 0;
+        margin: 7.25rem auto 0;
         gap: 11vw;
     }
     
@@ -81,17 +81,19 @@ img{
         font-size: 17px;
         margin-bottom: 26px;
         text-align: center;
+        position: fixed;
+        top: 16.9rem;
     }
     .description{
         font-size: 10px;
         position: absolute;
-        top: 15.4rem;
+        top: 16.4rem;
         right: auto;
     }
     .bdescription{
         font-size: 10px;
         position: absolute;
-        top: 19rem;
+        top: 20rem;
         right: auto;
         padding: 7px 5px;
     }
@@ -102,5 +104,7 @@ img{
         margin: 0 60px;
         font-size: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         transform: translateY(2.2rem);
+        position: fixed;
+        top: 21rem;
     }
 }

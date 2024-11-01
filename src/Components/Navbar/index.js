@@ -50,10 +50,10 @@ const Navbar = () => {
     </div>
       <div className={`mobileNav ${showMobMenu ? 'is-active' : ''}`}>
         <ul className="mobileNavList">
-          <li><Link to="/" onClick={(event) => handleLinkClick(event, '/')}>Home</Link></li>
-          <li><Link to="/about" onClick={(event) => handleLinkClick(event, '/about')}>About</Link></li>
-          <li><Link to="/projects" onClick={(event) => handleLinkClick(event, '/projects')}>Projects</Link></li>
-          <li><Link to="/contact" onClick={(event) => handleLinkClick(event, '/contact')}>Contact</Link></li>
+          <li><Link to="/" onTouchStart={(event) => handleLinkClick(event, '/')}>Home</Link></li>
+          <li><Link to="/about" onTouchStart={(event) => handleLinkClick(event, '/about')}>About</Link></li>
+          <li><Link to="/projects" onTouchStart={(event) => handleLinkClick(event, '/projects')}>Projects</Link></li>
+          <li><Link to="/contact" onTouchStart={(event) => handleLinkClick(event, '/contact')}>Contact</Link></li>
         </ul>
       </div>
     </>

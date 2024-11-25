@@ -31,7 +31,6 @@
     position: absolute;
     left:12%;
     top: 22px;
-    /* transform: translateY(600px); */
  }
  .resume-btn:hover{
     background-color: aliceblue;
@@ -128,10 +127,10 @@ li a:hover{
         position: absolute;
         left:39%;
         top: 15.5px;
-        /* transform: translateY(600px); */
      }
     li a{
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: bold;
         padding: 8px;
     } 
     .hamburger{

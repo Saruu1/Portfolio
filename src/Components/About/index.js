@@ -1,9 +1,6 @@
 import React from 'react'
 import "./about.css";
 const About = () => {
-  // const viewResume = () =>{
-
-  // }
   return (
     <>
     <div className="about">

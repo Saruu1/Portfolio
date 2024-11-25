@@ -1,10 +1,5 @@
 .about{
-   /* margin: 0; */
-   /* padding-bottom:  50px; */
    text-align: center;
-   /* background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center; */
 }
 .heading {
    display: inline-block;
@@ -19,7 +14,6 @@
 .aboutdescription{
    display: flex;
    justify-content: center;
-   /* text-align:start; */
    transform: translateY(240px);
    width: 40%;
    height: 30%;
@@ -52,7 +46,7 @@
 .skillList li{
    background-color: rgb(42, 42, 42);  
    padding: 7px;
-   font-size:20px;
+   font-size: 19px;
    box-sizing: border-box;
    width: auto;
    border-radius: 3px;
@@ -103,9 +97,8 @@
       transform: translateY(110px);
     }
     .aboutdescription{
-      font-size: 14px;
+      font-size: 16px;
       transform: translateY(190px);
-      /* text-align: start; */
     }
     .skills{
       font-size: 18px;
@@ -119,14 +112,9 @@
       gap: 6px;
     }
     .skillList li{
-      font-size: 12px;
+      font-size: 14px;
       padding: 6px;
       width: 25%;
-    }
-    .images{
-      /* display: flex;
-      justify-content: center;
-      align-items:center; */
     }
     .left {
       position: relative;
@@ -147,13 +135,11 @@
       gap: 10%;
      }
     .left img {
-     /* width: 50px; */
      width: 15%;
      height: 15%;
      margin: 5px;
     }
    .right img {
-      /* width: 50px; */
       width: 15%;
      height: 15%;
      margin: 5px;
